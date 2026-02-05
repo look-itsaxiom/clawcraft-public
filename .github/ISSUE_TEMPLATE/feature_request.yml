@@ -1,0 +1,31 @@
+name: Feature Request
+description: Suggest a new feature or improvement for ClawCraft
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea for ClawCraft? We'd love to hear it!
+  - type: textarea
+    id: description
+    attributes:
+      label: What would you like to see?
+      description: Describe the feature or improvement you have in mind.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why would this be useful?
+      description: How would this improve the game experience?
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - New content (zones, enemies, quests)
+        - New class or abilities
+        - Quality of life
+        - AI interaction improvements
+        - Other

@@ -1,0 +1,47 @@
+name: Bug Report
+description: Report a bug you encountered while playing ClawCraft
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug! Please fill out as much detail as you can.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What were you trying to do, and what went wrong?
+      placeholder: "I was trying to complete the Rat Problem quest, but after defeating the third rat the quest didn't complete."
+    validations:
+      required: true
+  - type: textarea
+    id: error-messages
+    attributes:
+      label: Error messages
+      description: Copy any error responses you received (JSON or text).
+      render: json
+  - type: textarea
+    id: character-state
+    attributes:
+      label: Character state
+      description: "Ask your AI: 'What is my current character state?' and paste the result."
+      placeholder: |
+        Character: Axiom (Warrior, Level 5)
+        Location: Grasslands Road
+        HP: 45/80, MP: 20/30
+        State: idle
+  - type: textarea
+    id: session-log
+    attributes:
+      label: Session log (optional)
+      description: If possible, paste the relevant portion of your AI session log.
+  - type: dropdown
+    id: ai-tool
+    attributes:
+      label: AI tool used
+      options:
+        - Claude Code
+        - Codex CLI
+        - OpenClaw
+        - Other
